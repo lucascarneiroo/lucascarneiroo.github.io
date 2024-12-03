@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Jogos que entraram pra história</h2>
 
-    <!-- Usando *ngIf para verificar se há jogos -->
+  
     <div *ngIf="games && games.length > 0; else noGames" class="row">
       <div class="col-md-4" *ngFor="let game of games">
         <div class="card mb-4">
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <!-- Template alternativo caso não haja jogos -->
+  
     <ng-template #noGames>
       <p>Não há jogos disponíveis no momento.</p>
     </ng-template>
