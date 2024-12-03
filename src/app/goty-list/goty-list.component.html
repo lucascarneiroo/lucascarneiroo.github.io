@@ -2,12 +2,12 @@
   <div class="container mt-4 text-center">
     <h1>Indicados ao Jogo do Ano</h1>
 
-    <!-- Usando o pipe empty para verificar se a lista de jogos está vazia -->
+  
     <div *ngIf="games | empty; else gameList">
-      <p>Não há jogos para mostrar.</p> <!-- Mensagem quando a lista de jogos estiver vazia -->
+      <p>Não há jogos para mostrar.</p>
     </div>
 
-    <!-- Bloco alternativo se games não estiver vazio -->
+  
     <ng-template #gameList>
       <div class="row">
         <div class="col-md-4" *ngFor="let game of games">
