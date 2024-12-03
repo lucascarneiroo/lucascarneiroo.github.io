@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 })
 export class GameAwardsService {
 
-  private apiUrl = 'https://api.rawg.io/api/games'; // API para jogos
+  private apiUrl = 'https://api.rawg.io/api/games';
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class GameAwardsService {
   getGames(): Observable<any> {
     const params = new HttpParams()
       .set('key', 'f52096a4a99f418d9986094b34202f04')
-      .set('language', 'pt'); // Adicionando parâmetro de idioma
+      .set('language', 'pt'); 
     return this.http.get<any>(this.apiUrl, { params });
   }
 
@@ -24,7 +24,7 @@ export class GameAwardsService {
   getGameDetails(id: number): Observable<any> {
     const params = new HttpParams()
       .set('key', 'f52096a4a99f418d9986094b34202f04')
-      .set('language', 'pt'); // Adicionando parâmetro de idioma
+      .set('language', 'pt');
     return this.http.get<any>(`${this.apiUrl}/${id}`, { params });
   }
 }
