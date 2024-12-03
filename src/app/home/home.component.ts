@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.gameService.getGames().subscribe(data => {
-      this.games = data.results;  // Ajuste conforme a estrutura dos dados retornados pela API
+      this.games = data.results; 
     });
   }
 }
