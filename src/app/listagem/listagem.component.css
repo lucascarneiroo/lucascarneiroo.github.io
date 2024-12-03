@@ -1,22 +1,22 @@
-/* Definindo a cor de fundo para a página inteira */
+
 body {
-  background-color: #03031b; /* Cor de fundo beige claro */
+  background-color: #03031b;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* container geral */
+
 .container {
   margin-top: 50px;
   padding: 0 15px;
   max-width: 1200px;
-  background-color: #050531; /* Fundo branco para o conteúdo do container */
-  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #050531; 
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* título principal */
+
 h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -24,7 +24,7 @@ h2 {
 
 }
 
-/* cards */
+
 .card {
   border: none;
   border-radius: 10px;
@@ -64,7 +64,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* botão de detalhes */
 .btn-primary {
   background-color: #041dac;
   border-color: #c2c1c1;
@@ -79,7 +78,6 @@ h2 {
   text-decoration: none;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .container {
     padding: 0 10px;
