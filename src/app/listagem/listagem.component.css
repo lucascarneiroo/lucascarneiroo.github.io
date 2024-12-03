@@ -1,0 +1,105 @@
+/* Definindo a cor de fundo para a página inteira */
+body {
+  background-color: #03031b; /* Cor de fundo beige claro */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* container geral */
+.container {
+  margin-top: 50px;
+  padding: 0 15px;
+  max-width: 1200px;
+  background-color: #050531; /* Fundo branco para o conteúdo do container */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* título principal */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e0e0e0;
+
+}
+
+/* cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(206, 19, 19, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #000000;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #03031b;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  color: #bbbbbb;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #b6b6b6;
+  margin-bottom: 15px;
+}
+
+/* botão de detalhes */
+.btn-primary {
+  background-color: #041dac;
+  border-color: #c2c1c1;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+}

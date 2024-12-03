@@ -1,0 +1,21 @@
+.content{
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+}
+
+.container{
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  background-color: #03031b; /* Cor roxa */
+  color: white; /* Cor do texto, para garantir contraste */
+}
+
+.carousel-item img {
+  object-fit: cover;
+}

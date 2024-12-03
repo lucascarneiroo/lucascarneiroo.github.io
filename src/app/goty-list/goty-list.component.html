@@ -1,0 +1,26 @@
+<body>
+  <div class="container mt-4 text-center">
+    <h1>Indicados ao Jogo do Ano</h1>
+
+    <!-- Usando o pipe empty para verificar se a lista de jogos está vazia -->
+    <div *ngIf="games | empty; else gameList">
+      <p>Não há jogos para mostrar.</p> <!-- Mensagem quando a lista de jogos estiver vazia -->
+    </div>
+
+    <!-- Bloco alternativo se games não estiver vazio -->
+    <ng-template #gameList>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let game of games">
+          <div class="card mb-4">
+            <img [src]="game.image" class="card-img-top" [alt]="game.title" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">{{ game.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</body>
+
+
