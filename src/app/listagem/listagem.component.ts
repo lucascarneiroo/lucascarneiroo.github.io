@@ -13,10 +13,10 @@ export class ListagemComponent implements OnInit {
 
   ngOnInit(): void {
     this.gameAwardsService.getGames().subscribe(data => {
-      this.games = data.results; // Assumindo que a API retorna dados em 'results'
+      this.games = data.results;
     },
     error => {
-      console.error('Erro ao carregar jogos', error);  // Em caso de erro, exibe no console
+      console.error('Erro ao carregar jogos', error);
     }
   );
 }
