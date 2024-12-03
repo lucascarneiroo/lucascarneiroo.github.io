@@ -12,8 +12,8 @@
 }
 
 body {
-  background-color: #03031b; /* Cor roxa */
-  color: white; /* Cor do texto, para garantir contraste */
+  background-color: #03031b;
+  color: white;
 }
 
 .carousel-item img {
